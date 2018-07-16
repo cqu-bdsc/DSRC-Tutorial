@@ -2,13 +2,12 @@
 
 DSRC tutorial, RSU, OBU
 
-
 @toc
 
 
 ## 0 阅读指南
 
-> 这是一篇关于如何使用Cohda wireless公司的Dedicated Short Range Communications（**DSRC**, 短程专用通讯）设备（包括On Road Unit, 即车载单元**OBU** 与RoadSide Unit, 即路侧单元 **RSU** ）教程。本文的写作的前提是假设读者有一定的车联网知识，其中包括DSRC等Vehicle to vehicle，**V2V**通信知识。
+> 这是一篇关于如何使用_Cohda wireless_公司的Dedicated Short Range Communications（**DSRC**, 短程专用通讯）设备（包括On Road Unit, 即车载单元**OBU** 与RoadSide Unit, 即路侧单元 **RSU** ）教程。本文的写作的前提是假设读者有一定的车联网知识，其中包括DSRC等Vehicle to vehicle，**V2V**通信知识。
 
 ## 1 DSRC 设备简介
 
@@ -25,73 +24,72 @@ DSRC tutorial, RSU, OBU
    ![rsu\_本体](image/rsu_%E6%9C%AC%E4%BD%93.png)
 
 2. GNSS 天线
-
+  
     ![gnss_ant](image/gnss_ant.png)
-
+   
    GNSS是全球导航卫星系统，主要用来接收导航卫星信号，支持的系统有GPS与GLONASS。
 
 3. DSRC 天线
-
+  
     ![dsrc ant](image/dsrc%20ant.png)
-
+   
    两个DSRC 5.9Ghz的天线。
 
 4. 固定绑带
-
+   
    ![固定绑带](image/%E5%9B%BA%E5%AE%9A%E7%BB%91%E5%B8%A6.png)
 
 5. 固定底座
-
+   
    ![固定底座](image/%E5%9B%BA%E5%AE%9A%E5%BA%95%E5%BA%A7.png)
 
 6. 防水网线接口
-
+   
    ![防水接口](image/%E9%98%B2%E6%B0%B4%E6%8E%A5%E5%8F%A3.png)
 
 #### 1.1.3 技术细节
 
 1. 符合标准
-
+   
    - IEEE 802.11
    - IEEE 1609
    - SAE J2735
-
+   
 2. 带宽
-
+   
    10MHz
-
+   
 3. 速率
-
+   
    3-27 Mbps
-
+   
 4. 操作系统
-
+   
    Linux 3.10.17
-
+   
 5. 接收敏感性
-
+   
    \-99 dBm @ 3 Mbps
-
+   
 6. 频段
-
+   
    5.9Ghz
-
+   
 7. 最大功率
-
+   
    \+22 dBm
-
+   
 8. GNSS定位精度
-
+   
    2.5m 最佳
-
+   
 9. 移动性与时延
-
+   
    800 km/h
    1500ns
-
+   
 10. 供电
      
-
 ![POE](image/POE.png)
 
 使用POE以太网供电，RSU同时通过以太网接口传输数据与供电。
@@ -129,46 +127,46 @@ DSRC tutorial, RSU, OBU
 #### 1.2.3 技术细节
 
 1. 符合标准
-
+   
    - IEEE 802.11
    - IEEE 1609
    - SAE J2735
-
+   
 2. 带宽
-
+   
    10MHz
-
+   
 3. 速率
-
+   
    3-27 Mbps
-
+   
 4. 操作系统
-
+   
    Linux 3.10.17, Ubuntu 16.04 LTS
-
+   
 5. 接收敏感性
-
+   
    \-99 dBm @ 3 Mbps
-
+   
 6. 频段
-
+   
    5.9Ghz
-
+   
 7. 最大功率
-
+   
    \+22 dBm
-
+   
 8. GNSS定位精度
-
+   
    2.5m 最佳
-
+   
 9. 移动性与时延
-
+   
    800 km/h
    1500ns
-
+   
 10. 供电
-
+    
     12V 直流电
 
 ## 2 设备使用指南
@@ -266,8 +264,10 @@ PC与DSRC设备应在同一局域网下才可以进行远程登陆到设备中�
 
 ### 3.2 在线资源
 
-访问[Cohda Wireless Support](https://support.cohdawireless.com/)，需要注意的是该网站需要账户密码登陆后才有访问资源权限。我们实验室的同学如果有访问资源的需求，可用邮箱联系[Near](mailto:singleangel@vip.qq.com)。
+访问[Cohda Wireless Support](https://support.cohdawireless.com/)，需要注意的是该网站需要账户密码登陆后才有访问资源权限。我们实验室的同学如果有访问资源的需求，可用邮箱联系[Near](
+mailto:singleangel@vip.qq.com)。
 
 ## 4 致谢
 
 最后，感谢大家抽出时间阅读本文档，我也深知一份好文档应该由大家一起来维护，如果发现文中有错误，请各位同学自行更正。也希望以后有新内容也可以添加上去。
+
