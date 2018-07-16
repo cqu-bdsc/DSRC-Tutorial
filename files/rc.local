@@ -1,0 +1,31 @@
+#!/bin/sh
+
+bsm_start()
+{
+    #start bsm-shell without logging
+	cd /home/duser
+    sudo ./bsm-shell -m 1 -c 178  -b 172 -n 172 -i 1 -f /dev/null -u 192.168.1.83 -y 4040 -z 4040 2>/dev/null &
+}
+
+bsm_stop()
+{
+    sudo killall bsm-shell
+}
+
+mode=$1
+echo "$0 is called with parameter: '$mode'"
+
+case $mode in
+    "start")
+        bsm_start
+        ;;
+    "stop")
+        bsm_stop
+        ;;
+    "restart")
+        bsm_stop
+        bsm_start
+        ;;
+    *)
+        ;;
+esac
