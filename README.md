@@ -2,6 +2,21 @@
 
 DSRC tutorial, RSU, OBU
 
+## 目录
+> [0 阅读指南](#0-阅读指南)
+> [1 DSRC 设备简介](#1-dsrc-设备简介)
+> [1.1 MK5 RSU](#1-1-mk5-rsu)
+> [1.2 MK5 OBU](#1-2-mk5-obu)
+> [2 设备使用指南](#2-设备使用指南)
+> [2.1 将DSRC设备连接上PC](#2-1-将dsrc设备连接上pc)
+> [2.2 更改设备初始IP](#2-2-更改设备初始ip)
+> [2.3 上下位机通信设置](#2-3-上下位机通信设置)
+> [2.4 其他说明](#2-4-其他说明)
+> [3 其他资源](#3-其他资源)
+> [3.1 其他文档](#3-1-其他文档)
+> [3.2 在线资源](#3-2-在线资源)
+> [4 致谢](#4-致谢)
+
 ## 0 阅读指南
 
 这是一篇关于如何使用_Cohda wireless_公司的Dedicated Short Range Communications（**DSRC**, 短程专用通讯）设备（包括On Board Unit, 即车载单元**OBU** 与RoadSide Unit, 即路侧单元 **RSU** ）教程。本文的写作的前提是假设读者有一定的车联网知识，其中包括DSRC等Vehicle to vehicle，**V2V**通信知识。
@@ -276,12 +291,12 @@ sudo cp rc.local /mnt/ubi
 
 ### 3.1 其他文档
 
-1. MK5_OBU 简介
-2. MK5_OBU 详细文档
-3. MK5_OUB 快速入门
-4. MK5_RSU 简介
-5. MK5_RSU 详细文档
-6. MK5_RSU 快速入门
+1. [MK5_OBU 简介](https://github.com/cqu-bdsc/DSRC-Tutorial/blob/master/docs/MK5_OBU.pdf)
+2. [MK5_OBU 详细文档](https://github.com/cqu-bdsc/DSRC-Tutorial/blob/master/docs/MK5_OBU_Specification.pdf)
+3. [MK5_OUB 快速入门](https://github.com/cqu-bdsc/DSRC-Tutorial/blob/master/docs/Quickstart%20Guide%20MK5%20OBU%20V0.1.pdf)
+4. [MK5_RSU 简介](https://github.com/cqu-bdsc/DSRC-Tutorial/blob/master/docs/MK5_RSU.pdf)
+5. [MK5_RSU 详细文档](https://github.com/cqu-bdsc/DSRC-Tutorial/blob/master/docs/MK5_RSU_Specification.pdf)
+6. [MK5_RSU 快速入门](https://github.com/cqu-bdsc/DSRC-Tutorial/blob/master/docs/Quickstart%20Guide%20MK5%20RSU%20V0.1.pdf)
 
 以上文档均可在docs 文件夹中获取。
 
