@@ -19,21 +19,31 @@ DSRC tutorial, RSU, OBU
 #### 1.1.2 产品构成
 
 1. RSU 本体
+
    ![rsu\_本体](image/rsu_%E6%9C%AC%E4%BD%93.png)
 
 2. GNSS 天线
-   ![gnss_ant](image/gnss_ant.png)
+  
+    ![gnss_ant](image/gnss_ant.png)
+   
    GNSS是全球导航卫星系统，主要用来接收导航卫星信号，支持的系统有GPS与GLONASS。
+
 3. DSRC 天线
-   ![dsrc ant](image/dsrc%20ant.png)
+  
+    ![dsrc ant](image/dsrc%20ant.png)
+   
    两个DSRC 5.9Ghz的天线。
+
 4. 固定绑带
+   
    ![固定绑带](image/%E5%9B%BA%E5%AE%9A%E7%BB%91%E5%B8%A6.png)
 
 5. 固定底座
+   
    ![固定底座](image/%E5%9B%BA%E5%AE%9A%E5%BA%95%E5%BA%A7.png)
 
 6. 防水网线接口
+   
    ![防水接口](image/%E9%98%B2%E6%B0%B4%E6%8E%A5%E5%8F%A3.png)
 
 #### 1.1.3 技术细节
@@ -60,9 +70,9 @@ DSRC tutorial, RSU, OBU
    800 km/h
    1500ns
 10. 供电
-      
-
+     
 ![POE](image/POE.png)
+
 使用POE以太网供电，RSU同时通过以太网接口传输数据与供电。
 
 #### 内部构造
@@ -83,13 +93,16 @@ DSRC tutorial, RSU, OBU
 #### 1.2.2 产品构成
 
 1. OBU 本体
+
    ![obu1](image/obu1.png)
    ![obu2](image/obu2.png)
 
 2. DSRC与GNSS集成天线
+
    ![obu_ant](image/obu_ant.png)
 
 3. 电源线
+
    ![obu_power](image/obu_power.png)
 
 #### 1.2.3 技术细节
@@ -125,14 +138,18 @@ DSRC tutorial, RSU, OBU
 #### 2.1.1 RSU
 
 ![connect_rsu](image/connect_rsu.png)
+
 将RSU 与其他部件如上图连接，通过POE供电。POE供电说明图如下。
+
 ![poe1](image/poe1.png)
+
 白色网线连接POE口，连接在RSU上的RJ45接口上，而黄线连接PC上的RJ45接口。
 
 #### 2.1.2 OBU
 
 ![connect_obu1](image/connect_obu1.png)
 ![connect_obu2](image/connect_obu2.png)
+
 以上两图说明了OBU与天线和电源的连接，OBU是通过12V 的直流电进行供电，而与PC的连接是直接通过网线连接。
 
 ### 2.2 更改设备初始IP
@@ -143,7 +160,9 @@ DSRC tutorial, RSU, OBU
 
 为了方便以后对设备的使用，我们现在将执行以下操作更改设备的初始IP。
 设备的初始IP定义如下，IP地址为**169.254.ABC.DEF**，其中IP地址的后六位由设备上的设备串码后四位的**16进制值**确定。
+
 ![ip](image/ip.jpg)
+
 例如，**76F9**转换为IP地址后，即为169.254.**118.249**
 
 #### 2.2.2 更改初始IP
@@ -207,4 +226,5 @@ PC与DSRC设备应在同一局域网下才可以进行远程登陆到设备中�
 
 ### 3.2 在线资源
 
-访问[Cohda Wireless Support](https://support.cohdawireless.com/)，需要注意的是该网站需要账户密码登陆后才有访问资源权限。我们实验室的同学如果有访问资源的需求，可用邮箱联系[Near](singleangel@vip.qq.com)。
+访问[Cohda Wireless Support](https://support.cohdawireless.com/)，需要注意的是该网站需要账户密码登陆后才有访问资源权限。我们实验室的同学如果有访问资源的需求，可用邮箱联系[Near](
+mailto:singleangel@vip.qq.com)。
