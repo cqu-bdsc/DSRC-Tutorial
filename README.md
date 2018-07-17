@@ -1,25 +1,26 @@
 # DSRC-Tutorial
 
-DSRC tutorial, RSU, OBU
+Cohda wireless, DSRC tutorial, RSU, OBU, CQU-BDSC
 
 ## 目录
-> [0 阅读指南](#0-阅读指南)
-> [1 DSRC 设备简介](#1-dsrc-设备简介)
-> [1.1 MK5 RSU](#1-1-mk5-rsu)
-> [1.2 MK5 OBU](#1-2-mk5-obu)
-> [2 设备使用指南](#2-设备使用指南)
-> [2.1 将DSRC设备连接上PC](#2-1-将dsrc设备连接上pc)
-> [2.2 更改设备初始IP](#2-2-更改设备初始ip)
-> [2.3 上下位机通信设置](#2-3-上下位机通信设置)
-> [2.4 其他说明](#2-4-其他说明)
-> [3 其他资源](#3-其他资源)
-> [3.1 其他文档](#3-1-其他文档)
-> [3.2 在线资源](#3-2-在线资源)
-> [4 致谢](#4-致谢)
 
+> [0 阅读指南](#0-阅读指南)  
+> [1 DSRC 设备简介](#1-dsrc-设备简介)  
+> [1.1 MK5 RSU](#11-mk5-rsu)  
+> [1.2 MK5 OBU](#12-mk5-obu)  
+> [2 设备使用指南](#2-设备使用指南)  
+> [2.1 将DSRC设备连接上PC](#21-将dsrc设备连接上pc)  
+> [2.2 更改设备初始IP](#22-更改设备初始ip)  
+> [2.3 上下位机通信设置](#23-上下位机通信设置)  
+> [2.4 其他说明](#24-其他说明)  
+> [3 其他资源](#3-其他资源)   
+> [3.1 其他文档](#31-其他文档)  
+> [3.2 在线资源](#32-在线资源)  
+> [4 致谢](#4-致谢)
+  
 ## 0 阅读指南
 
-这是一篇关于如何使用_Cohda wireless_公司的Dedicated Short Range Communications（**DSRC**, 短程专用通讯）设备（包括On Board Unit, 即车载单元**OBU** 与RoadSide Unit, 即路侧单元 **RSU** ）教程。本文的写作的前提是假设读者有一定的车联网知识，其中包括DSRC等Vehicle to vehicle，**V2V**通信知识。
+这是一篇关于如何使用 _Cohda wireless_ 公司的Dedicated Short Range Communications（**DSRC**, 短程专用通讯）设备（包括On Board Unit, 即车载单元**OBU** 与RoadSide Unit, 即路侧单元 **RSU** ）教程。本文的写作的前提是假设读者有一定的车联网知识，其中包括DSRC等Vehicle to vehicle，**V2V**通信知识。
 
 ## 1 DSRC 设备简介
 
@@ -106,7 +107,7 @@ DSRC tutorial, RSU, OBU
 
 使用POE以太网供电，RSU同时通过以太网接口传输数据与供电。
 
-#### 内部构造
+#### 1.1.4 内部构造
 
 > MK5 RSU 与 OBU 使用相同的集成板，只是外观上不一样。
 
@@ -224,7 +225,7 @@ sudo ssh user@169.254.ABC.DEF
 ```
 
 即可登陆上设备中的Ubuntu系统，其中 _用户名是 **user**，密码是 **user**_，IP地址由2.2.1获取。
-通过以下命令可以更改初始IP为==192.168.1.80==
+通过以下命令可以更改初始IP为**192.168.1.80**
 
 ```bash
 sudo fw_setenv static_ip_addr "192.168.1.80"
