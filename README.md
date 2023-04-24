@@ -64,7 +64,7 @@ Cohda wireless, DSRC tutorial, RSU, OBU, CQU-BDSC
 
 1. 符合标准
    
-   - IEEE 802.11
+   - IEEE 802.11p
    - IEEE 1609
    - SAE J2735
    
@@ -141,7 +141,7 @@ Cohda wireless, DSRC tutorial, RSU, OBU, CQU-BDSC
 
 1. 符合标准
    
-   - IEEE 802.11
+   - IEEE 802.11p
    - IEEE 1609
    - SAE J2735
    
